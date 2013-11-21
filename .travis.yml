@@ -1,1 +1,1 @@
-script: ./Continuous-Integration/validate
+script: ./validate
