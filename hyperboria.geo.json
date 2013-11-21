@@ -1,48 +1,45 @@
 {
   "type": "FeatureCollection",
   "features": [
-    {
+     {
       "type": "Feature",
       "properties": {
-        "Type": "Exchange",
+        "marker-size": "large",
+        "type": "Exchange",
         "Connection": "Ethernet",
         "Maintainer": "Waaghals"
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              5.933883190155029,
-              51.98688053459628
-            ],
-            [
-              5.933883190155029,
-              51.98717951241844
-            ],
-            [
-              5.934261381626129,
-              51.98717951241844
-            ],
-            [
-              5.934261381626129,
-              51.98688053459628
-            ],
-            [
-              5.933883190155029,
-              51.98688053459628
-            ]
-          ]
+          5.934084355831146,
+          51.987035805095594
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "marker-symbol": "marker-stroked",
-        "Type": "Access",
-        "Connection": "Ethernet",
-        "Maintainer": "Waaghals"
+        "marker-size": "medium",
+        "type": "Access",
+        "connection": "Ethernet",
+        "maintainer": "Waaghals"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.934084355831146,
+          51.987035805095594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-size": "small",
+        "type": "Services",
+        "connection": "Ethernet",
+        "maintainer": "Waaghals"
       },
       "geometry": {
         "type": "Point",
