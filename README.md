@@ -28,6 +28,7 @@ These node only provide a peering medium.
 This could be Wifi-repeater or a common switch to which other node connect and peer over.
 Such a node won't be able to talk the [Cjdns](https://github.com/cjdelisle/cjdns) protocol on its own and needs node connected to it.
 It is recommended to keep these nodes in a high desity node location such as a datacenter or a densely populated area.
+A example of a Hyperboria Exchange is NL-HX. It is able to connect to any node at [any datacenter that is connected](/nl-ix.geo.json) by the [NL-IX](http://www.nl-ix.net/).
 
 #### Access
 These nodes provide a connection to the complete Hyperboria network.
