@@ -1,5 +1,5 @@
 # Hyperboria-Map
-[![Build Status](https://api.travis-ci.org/waaghals/Hyperboria-Map.png)](https://api.travis-ci.org/waaghals/Hyperboria-Map)
+[![Build Status](https://api.travis-ci.org/waaghals/Hyperboria-Map.png)](https://travis-ci.org/waaghals/Hyperboria-Map)
 
 A map of physical Cjdns nodes available for direct peering.
 
