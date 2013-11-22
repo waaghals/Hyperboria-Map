@@ -1,4 +1,10 @@
 #! /bin/bash
+function jsonval {
+    temp=`echo $json | sed 's/\\\\\//\//g' | sed 's/[{}]//g' | awk -v k="text" '{n=split($0,a,","); for (i=1; i<=n; i++) print a[i]}' | sed 's/\"\:\"/\|/g' | sed 's/[\,]/ /g' | sed 's/\"//g' | grep -w $prop`
+    echo ${temp##*|}
+}
+
+
 files=`find . -type f | egrep '\.geo\.json$'`
 fail_count=0
 file_count=0
@@ -7,15 +13,17 @@ for file in $files
 do
 
     (( file_count += 1 ))
-    result=$(curl -X POST --data @$file $data http://geojsonlint.com/validate 2>/dev/null)
-    status=`echo $result | cut -d'"' -f4`
+    json=$(curl -X POST --data @$file $data http://geojsonlint.com/validate 2>/dev/null)
+    prop="status"
+    result=`jsonval`
 
-    if [ "$status" = "ok" ]; then
+    if [ "$result" = "status: ok" ]; then
         echo "Valid GeoJSON for (" $file ")"
     else
-	error=`echo $result | cut -d'"' -f8`
+	prop="message"
+        reason=`jsonval`
         echo "Invalid GeoJSON for (" $file ")"
-        echo "Reason: " $error
+        echo $reason
       ((file_count +=1 ))
     fi
 done

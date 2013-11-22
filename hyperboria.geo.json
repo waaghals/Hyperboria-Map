@@ -1,88 +1,65 @@
 {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "marker-size": "large",
-        "marker-color": "#7a22ad",
-        "type": "Exchange",
-        "Connection": "Ethernet",
-        "Maintainer": "Waaghals"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          5.934084,
-          51.987035
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "marker-size": "medium",
-        "marker-color": "#7a22ad",
-        "type": "Access",
-        "connection": "Ethernet",
-        "maintainer": "Waaghals"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          5.93393,
-          51.98713
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "marker-size": "small",
-        "marker-color": "#7a22ad",
-        "type": "Services",
-        "connection": "Ethernet",
-        "maintainer": "Waaghals"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          5.93393,
-          51.9869
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            5.934084,
-          51.987035
-          ],
-          [
-            5.93393,
-          51.98713
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            5.934084,
-          51.987035
-          ],
-          [
-            5.93393,
-          51.9869
-          ]
-        ]
-      }
-    }
-  ]
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"properties": {
+				"marker-size": "large",
+				"marker-color": "#7a22ad",
+				"type": "Exchange",
+				"Connection": "Ethernet",
+				"Maintainer": "Waaghals"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [5.934084, 51.987035]
+			}
+		}, {
+			"type": "Feature",
+			"properties": {
+				"marker-size": "medium",
+				"marker-color": "#7a22ad",
+				"type": "Access",
+				"connection": "Ethernet",
+				"maintainer": "Waaghals"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [5.93393, 51.98713]
+			}
+		}, {
+			"type": "Feature",
+			"properties": {
+				"marker-size": "small",
+				"marker-color": "#7a22ad",
+				"type": "Services",
+				"connection": "Ethernet",
+				"maintainer": "Waaghals"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [5.93393, 51.9869]
+			}
+		}, {
+			"type": "Feature",
+			"properties": {},
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[5.934084, 51.987035],
+					[5.93393, 51.98713]
+				]
+			}
+		}, {
+			"type": "Feature",
+			"properties": {},
+			"geometry": {
+				"type": "LineString",
+				"coordinates": [
+					[5.934084, 51.987035],
+					[5.93393, 51.9869]
+				]
+			}
+		}
+	]
 }
